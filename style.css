@@ -41,9 +41,9 @@ body{
 .banner .intro{
     width: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 0%;
+    /* transform: translate(-50%, -50%); */
 
 }
 main{
@@ -259,9 +259,9 @@ nav ul li a{
     background-color: #F77E23;
     border: none;
     position: fixed;
-    right: 90px;
-    top: 550px;
-    z-index: 3;
+    right: 60px;
+    top: 630px;
+    z-index: 10;
     cursor: pointer;
 }
 .fa-up-long{
@@ -297,6 +297,27 @@ nav ul li a{
     max-width: 1440px;
     flex-wrap: wrap;
     bottom: 0;
+}
+.arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    background-color: #FF6F28;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.left{
+    left: 10px;
+    bottom: 200px;
+}
+.right{
+    right: 10px;
+    bottom: 200px;
 }
 .img-wrapper{
     position: relative;
@@ -456,6 +477,9 @@ nav ul li a{
     }
     h1.cartegories{
         text-align: center;
+    }
+    .arrow{
+        display: none;
     }
 }
 
